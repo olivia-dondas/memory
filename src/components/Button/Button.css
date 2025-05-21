@@ -1,0 +1,29 @@
+/* src/components/Button/Button.css */
+.custom-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #0f4c81; /* Bleu Pantone exemple */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin: 5px;
+}
+
+.custom-button:hover {
+  background-color: #0c3b66; /* Teinte plus foncée */
+}
+
+.custom-button:active {
+  transform: translateY(1px); /* Léger effet d'enfoncement au clic */
+}
+
+/* Tu peux ajouter d'autres styles pour des variantes de boutons si besoin */
+.custom-button.secondary {
+  background-color: #6c757d;
+}
+
+.custom-button.secondary:hover {
+  background-color: #5a6268;
+}

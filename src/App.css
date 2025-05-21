@@ -1,42 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* src/App.css */
+.App {
   text-align: center;
+  font-family: "Arial", sans-serif;
+  margin-top: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-info {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.game-info p {
+  font-size: 1.2em;
+  color: #555;
 }
 
-.card {
-  padding: 2em;
+.game-info button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #0f4c81; /* Classic Blue de Pantone comme exemple */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.game-info button:hover {
+  background-color: #0c3b66; /* Une teinte plus foncée */
+}
+.game-info button:active {
+  transform: translateY(1px); /* Léger effet d'enfoncement au clic */
+}
+
+.Board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 450px; /* ajuste selon le nombre de cartes */
 }

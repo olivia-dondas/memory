@@ -1,7 +1,12 @@
 import React from "react";
-function Button({ label }) {
-  return <button>{label}</button>;
-}
-export default Button;
+import "./Button.css";
 
-<Button label="Cliiick!" />;
+function Button({ onClick, children, className = "" }) {
+  return (
+    <button className={`custom-button ${className}`} onClick={onClick}>
+      {children}
+    </button>
+  );
+}
+
+export default Button;
