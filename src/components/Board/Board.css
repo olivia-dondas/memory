@@ -1,0 +1,11 @@
+/* src/components/Board/Board.css */
+.Board {
+  display: flex;
+  flex-wrap: wrap; /* ESSENTIEL pour la grille */
+  justify-content: center; /* Pour centrer les cartes */
+  max-width: 600px; /* Ou une autre largeur adaptée */
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #1a0606;
+  border-radius: 10px;
+}
