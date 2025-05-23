@@ -1,12 +1,33 @@
 /* src/App.css */
+@import url("https://use.typekit.net/ign7kxf.css");
+
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-family: "Arial", sans-serif;
-  margin-top: 20px;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  min-height: 100vh;
+  margin-top: 0;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 h1 {
   color: #333;
+  font-family: helvetica-neue-lt-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin-bottom: 20px;
 }
 
@@ -45,3 +66,12 @@ h1 {
   margin: 0 auto;
   max-width: 450px; /* ajuste selon le nombre de cartes */
 }
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+/* Ajout d'un fond de couleur */

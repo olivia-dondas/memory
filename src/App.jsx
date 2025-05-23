@@ -12,8 +12,7 @@ const pantoneColorList = [
   { name: "PANTONE 14-4811 TCX", value: "#F2A900" }, // Peach Echo
   { name: "PANTONE 15-5519 TCX", value: "#A7D3E0" }, // Aqua Sky
   { name: "PANTONE 12-0740 TCX", value: "#F6EB61" }, // Mimosa
-  { name: "PANTONE 16-1542 TCX", value: "#FF6A13" }, // Tangerine Tango
-  { name: "PANTONE 17-1463 TCX", value: "#FF6A13" }, // Flame
+  { name: "PANTONE 111-021 TCX", value: "#A67C2D" }, // Honey Gold
 ];
 
 const initializeCards = () => {
@@ -130,7 +129,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Memory Pantone</h1>
+      <h1>PANTONE® MEMORY</h1>
       <Board cards={cards} onCardClick={handleCardClick} />
       <div className="game-info">
         <p>Coups : {moves}</p>
