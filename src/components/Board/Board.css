@@ -1,11 +1,14 @@
 /* src/components/Board/Board.css */
 .Board {
-  display: flex;
-  flex-wrap: wrap; /* ESSENTIEL pour la grille */
-  justify-content: center; /* Pour centrer les cartes */
-  max-width: 600px; /* Ou une autre largeur adaptée */
-  margin: 20px auto;
-  padding: 10px;
-  background-color: #1a0606;
-  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 12px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #554945;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px; /* Ajuste selon la taille max souhaitée */
+  box-sizing: border-box;
 }

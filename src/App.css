@@ -5,7 +5,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: bisque;
+  background-color: #2a2a2a; /* Couleur de fond noire */ /* background-color: rgb(12, 12, 12); */
 }
 
 .App {
@@ -21,14 +21,21 @@
   margin-top: 0;
   width: 100vw;
   box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
-  color: #333;
+  color: #000000;
   font-family: helvetica-neue-lt-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
   margin-bottom: 20px;
+  font-size: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .game-info {
@@ -44,7 +51,7 @@ h1 {
   padding: 10px 20px;
   font-size: 1em;
   color: white;
-  background-color: #0f4c81; /* Classic Blue de Pantone comme exemple */
+  background-color: #0f273d;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -59,12 +66,15 @@ h1 {
 }
 
 .Board {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 450px; /* ajuste selon le nombre de cartes */
+  max-width: 100vw;
+  background-color: #554945;
 }
 
 .root {
@@ -72,6 +82,5 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  height: 100vh;
 }
-/* Ajout d'un fond de couleur */
