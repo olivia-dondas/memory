@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Board from "./components/Board/Board";
 import Button from "./components/Button/Button";
+//import Timer from "./components/Timer/Timer";
 import "./App.css";
 
 const pantoneColorList = [
