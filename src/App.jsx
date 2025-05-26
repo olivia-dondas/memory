@@ -1,35 +1,31 @@
 import React, { useState, useEffect } from "react";
 import Board from "./components/Board/Board";
 import Button from "./components/Button/Button";
+//import Timer from "./components/Timer/Timer";
 import "./App.css";
 
 const pantoneColorList = [
-  { name: "PANTONE 17-5104 TCX", value: "#F7CACA" }, // Rose Quartz
-  { name: "PANTONE 13-0647 TCX", value: "#FFC847" }, // Vivid Yellow
-  { name: "PANTONE 19-4052 TCX", value: "#00C1D5" }, // Serenity Blue
-  { name: "PANTONE 16-1546 TCX", value: "#13294B" }, // Night blue
-  { name: "PANTONE 18-1664 TCX", value: "#FF6A13" }, // Living Coral
-  { name: "PANTONE 14-4811 TCX", value: "#F2A900" }, // Peach Echo
-  { name: "PANTONE 15-5519 TCX", value: "#A7D3E0" }, // Aqua Sky
-  { name: "PANTONE 12-0740 TCX", value: "#F6EB61" }, // Mimosa
-  { name: "PANTONE 16-1542 TCX", value: "#FF6A13" }, // Tangerine Tango
-  { name: "PANTONE 17-1463 TCX", value: "#FF6A13" }, // Flame
+  { nameParts: ["PANTONE", "13-1520", "Rose Quartz"], value: "#F7CACA" },
+  { nameParts: ["PANTONE", "13-0647", "Illuminating"], value: "#F6EB61" },
+  { nameParts: ["PANTONE", "19-4052", "Classic Blue"], value: "#0F4C81" },
+  { nameParts: ["PANTONE", "16-1546", "Living Coral"], value: "#FF6F61" },
+  { nameParts: ["PANTONE", "14-0852", "Spectra Yellow"], value: "#FFC20E" },
+  { nameParts: ["PANTONE", "18-3838", "Ultra Violet"], value: "#5F4B8B" },
 ];
-
 const initializeCards = () => {
   const allCards = [];
   let idCounter = 1;
   pantoneColorList.forEach((color) => {
     allCards.push({
       id: idCounter++,
-      colorName: color.name,
+      colorName: color.nameParts,
       colorValue: color.value,
       isFlipped: false,
       isMatched: false,
     });
     allCards.push({
       id: idCounter++,
-      colorName: color.name,
+      colorName: color.nameParts,
       colorValue: color.value,
       isFlipped: false,
       isMatched: false,
@@ -130,7 +126,22 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Memory Pantone</h1>
+      <h1>
+        <span
+          style={{
+            fontFamily: "'Helvetica Neue', Helvetica, sans-serif",
+            fontWeight: "bold",
+            textTransform: "uppercase",
+            fontSize: "24px",
+          }}
+        >
+          Pantone
+          <sup style={{ fontSize: "0.5em", verticalAlign: "super" }}>
+            ®
+          </sup>{" "}
+          MEMORY
+        </span>
+      </h1>
       <Board cards={cards} onCardClick={handleCardClick} />
       <div className="game-info">
         <p>Coups : {moves}</p>
