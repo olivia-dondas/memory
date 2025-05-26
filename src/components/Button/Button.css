@@ -1,8 +1,10 @@
 /* src/components/Button/Button.css */
 .custom-button {
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1em;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #0f4c81; /* Bleu Pantone exemple */
   border: none;
   border-radius: 5px;

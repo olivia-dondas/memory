@@ -6,9 +6,17 @@
   justify-items: center;
   align-items: center;
   margin: 0 auto;
-  background-color: #554945;
+  background-color: #f2f2f2;
   padding: 20px;
   width: 100%;
-  max-width: 500px; /* Ajuste selon la taille max souhaitée */
+  max-width: 600px; /* Ajuste selon la taille max souhaitée */
   box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .Board {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    padding: 8px;
+    max-width: 100vw;
+  }
 }
