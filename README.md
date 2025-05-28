@@ -1,4 +1,4 @@
-# Memory Pantone 🎨
+# Pantone Memory 🎨
 
 Un jeu de Memory inspiré des palettes de couleurs Pantone, pour tester ta mémoire visuelle tout en profitant d’un design élégant et moderne.
 

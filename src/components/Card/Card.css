@@ -53,7 +53,6 @@
   color: black;
 }
 
-/* 🟩 Couleur principale */
 .Card-back .color-top {
   flex: 2;
   width: 100%;
@@ -62,7 +61,7 @@
   padding-left: 8px;
   padding-bottom: 8px;
 }
-/* ⚪ Bloc info avec nom Pantone */
+/* Bloc info */
 .Card-back .color-bottom {
   flex: 1;
   background-color: white;
@@ -72,7 +71,7 @@
   padding: 6px;
   text-align: left;
   border-top: 1px solid #ccc;
-  font-family: "'Helvetica Neue', Helvetica, sans-serif";
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 24px;
 }
